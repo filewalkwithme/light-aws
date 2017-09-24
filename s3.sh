@@ -29,4 +29,4 @@ else
 fi
 
 echo "Starting minio"
-docker run -p 9000:9000 -d --rm --name minio1 --mount source=minio-data,target=/data --mount source=minio-config,target=/root/.minio minio/minio server /data
+docker run -p 9001:9001 -d --rm --name minio --mount source=minio-data,target=/data --mount source=minio-config,target=/root/.minio minio/minio server /data
